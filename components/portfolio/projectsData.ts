@@ -52,7 +52,7 @@ export const PROJECTS: readonly ProjectDetail[] = [
     title: "Energy Recruitment Hub",
     cardDescription:
       "Full stack job portal and headless CMS for the energy sector with AI CV scoring, Stripe billing, and multi role dashboards.",
-    cardImage: "/projects/project-1.png",
+    cardImage: "/projects/project-1.webp",
     cardTags: ["Next.js", "Strapi", "PostgreSQL", "Stripe"],
     tagline:
       "Energy Recruitment Hub (ERH) is a full stack, multi role job portal and headless CMS built for the energy and recruitment sector. It connects job seekers, recruiters, and internal staff in one marketplace with AI powered CV scoring, career intelligence, Stripe subscriptions, and role based dashboards.",
@@ -62,7 +62,7 @@ export const PROJECTS: readonly ProjectDetail[] = [
     timeline: "Production release",
     technologiesSummary:
       "Next.js 16, Strapi 5, PostgreSQL, Stripe, OpenAI, AWS S3",
-    heroImage: "/projects/project-1.png",
+    heroImage: "/projects/project-1.webp",
     overview: [
       "Energy Recruitment Hub is a production grade recruitment platform connecting three sides of a hiring marketplace: job seekers who browse jobs, apply, and use AI CV scoring and career intelligence; recruiters and employers who post jobs, manage companies, unlock applicants, and pay via Stripe subscriptions; and internal staff (Admin and VA) who moderate content, manage users, and run training workflows.",
       "The project is a monorepo with a Strapi 5 TypeScript backend (headless CMS, REST API, business logic) and a Next.js 16 frontend (public marketing site plus four role based dashboards). Production runs at energyrecruitmenthub.com with the frontend on Vercel and Strapi hosted separately.",
@@ -315,7 +315,7 @@ export const PROJECTS: readonly ProjectDetail[] = [
     title: "Brand Appeal Boardroom",
     cardDescription:
       "Subscription SaaS for aesthetic professionals, Canva templates, social calendar, Stripe billing, and admin content workflow.",
-    cardImage: "/projects/project-2.png",
+    cardImage: "/projects/project-2.webp",
     cardTags: ["Next.js", "Stripe", "Canva", "MongoDB"],
     tagline:
       "Brand Appeal (The Brand Appeal Boardroom™) is a subscription SaaS platform for aesthetic professionals, med spas, injectors, skincare providers, and similar businesses. It delivers done for you social media content via Canva templates, content planning tools, and monthly Boardroom membership perks positioned as strategic content for aesthetic brands.",
@@ -325,7 +325,7 @@ export const PROJECTS: readonly ProjectDetail[] = [
     timeline: "Production release",
     technologiesSummary:
       "Next.js 15, React 19, Stripe, Canva API, MongoDB, Vercel",
-    heroImage: "/projects/project-2.png",
+    heroImage: "/projects/project-2.webp",
     overview: [
       "Brand Appeal Boardroom is a subscription SaaS platform built for med spas, injectors, skincare providers, and beauty clinics who need consistent, on brand social content without building everything in house. Members get Canva templates (Posts, Carousels, Reels, Stories), a social calendar, trending library, and Boardroom features including Content Vault, Social Calendar, Trend Report, Beauty Briefcase, Executive Suite, and Reception Desk.",
       "The platform positions itself as strategic content membership for aesthetic brands, strategy, captions, content plans, and trend tools delivered monthly at $49/month for unlimited access on the landing page.",
@@ -551,7 +551,7 @@ export const PROJECTS: readonly ProjectDetail[] = [
     title: "Learning Management System",
     cardDescription:
       "Multi role LMS for tutoring institutes with 8 dashboards, RBAC, scheduling, billing, and institute operations.",
-    cardImage: "/projects/project-3.png",
+    cardImage: "/projects/project-3.webp",
     cardTags: ["Next.js", "React", "TypeScript", "MongoDB"],
     tagline:
       "A multi role educational platform built for tutoring centers and learning institutes. Beyond traditional course delivery, it handles end to end institute management: students, teachers, class scheduling, family billing, room operations, learning materials, feedback, and role based permissions across eight user types.",
@@ -561,7 +561,7 @@ export const PROJECTS: readonly ProjectDetail[] = [
     timeline: "Production release",
     technologiesSummary:
       "Next.js 15, React 19, Vite, TypeScript, Tailwind CSS 4, MongoDB",
-    heroImage: "/projects/project-3.png",
+    heroImage: "/projects/project-3.webp",
     overview: [
       "Learning Management System (LMS) is a multi role educational platform designed for tutoring centers and learning institutes. It is not a traditional video only LMS. It manages the full institute workflow from enrollment and scheduling to attendance, billing, and feedback.",
       "The platform covers student and teacher management, class scheduling and attendance, family and guardian billing, room scheduling, learning materials, tasks, reports, and granular role based permissions across eight user types.",
@@ -838,7 +838,7 @@ export const PROJECTS: readonly ProjectDetail[] = [
     title: "LinkBiz",
     cardDescription:
       "WhatsApp lead capture SaaS with CRM, campaign tracking, Paystack billing, and AI powered business insights for SMBs.",
-    cardImage: "/projects/project-4.png",
+    cardImage: "/projects/project-4.webp",
     cardTags: ["React", "Node.js", "MongoDB", "Paystack"],
     tagline:
       "LinkBiz is a SaaS platform built to help businesses capture, organize, and manage customer enquiries generated through WhatsApp. Instead of customers directly opening a WhatsApp chat, LinkBiz first collects their name, contact number, enquiry, and lead source through a simple form before redirecting them to WhatsApp.",
@@ -848,7 +848,7 @@ export const PROJECTS: readonly ProjectDetail[] = [
     timeline: "Production release",
     technologiesSummary:
       "React, Vite, Node.js, MongoDB, Paystack, WhatsApp deep linking, Vercel",
-    heroImage: "/projects/project-4.png",
+    heroImage: "/projects/project-4.webp",
     overview: [
       "LinkBiz transforms WhatsApp into a complete lead generation and customer management platform. Whenever a customer clicks a LinkBiz business link, they complete a lead form with contact information and enquiry details before WhatsApp opens. Every enquiry becomes a stored lead inside the business dashboard.",
       "Many businesses rely on WhatsApp for customer communication, but WhatsApp alone is not designed to manage leads effectively. Messages get buried, contacts are lost when devices change, there is no centralized database, no lead source tracking, and no reporting. These gaps result in missed opportunities and reduced growth.",

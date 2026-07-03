@@ -100,6 +100,7 @@ export default function ProjectsSection() {
                         alt={`${project.title} preview`}
                         fill
                         sizes="(max-width: 640px) 100vw, (max-width: 1024px) 50vw, 480px"
+                        loading="lazy"
                         className="object-cover transition duration-500 group-hover:scale-[1.03]"
                       />
                     ) : (
