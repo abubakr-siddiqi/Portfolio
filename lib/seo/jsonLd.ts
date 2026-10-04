@@ -2,6 +2,7 @@ import {
   SITE_ALTERNATE_NAMES,
   SITE_DESCRIPTION,
   SITE_OG_IMAGE_SRC,
+  SITE_SOCIAL,
   SITE_TITLE,
   SITE_URL,
 } from "@/components/portfolio/data";
@@ -31,6 +32,11 @@ export function buildSiteJsonLd() {
         image,
         jobTitle: "Full Stack Developer",
         description: SITE_DESCRIPTION,
+        sameAs: [
+          SITE_SOCIAL.linkedin,
+          SITE_SOCIAL.github,
+          SITE_SOCIAL.upwork,
+        ],
         knowsAbout: [
           "Full Stack Development",
           "Next.js",

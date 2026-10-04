@@ -18,7 +18,7 @@ export const SITE_LOGO_SRC =
   "/logo/Generated_image-background-remover.png";
 
 /** Resume PDF served from public/resume/ */
-export const SITE_RESUME_PDF = "/resume/abubakar-resume-original.pdf";
+export const SITE_RESUME_PDF = "/resume/AbuBakr-Siddiqi-CV.pdf";
 
 /** Browser tab / home screen icons (public/logo/) — separate from header wordmark PNG */
 export const SITE_FAVICON_ICO = "/logo/favicon.ico";
@@ -100,6 +100,19 @@ export const SITE_OG_IMAGE_ALT =
 /** Header wordmark (logo + text) */
 export const SITE_BRAND_PRIMARY = "AbuBakar";
 export const SITE_BRAND_SECONDARY = "Siddiqi";
+
+/** Public social / freelance profiles (hero, JSON-LD, etc.) */
+export const SITE_SOCIAL = {
+  linkedin:
+    process.env.NEXT_PUBLIC_HERO_LINKEDIN_URL?.trim() ||
+    "https://www.linkedin.com/in/abubakr-siddiqi",
+  upwork:
+    process.env.NEXT_PUBLIC_HERO_UPWORK_URL?.trim() ||
+    "https://www.upwork.com/freelancers/~01317783ba53666fa1",
+  github:
+    process.env.NEXT_PUBLIC_HERO_GITHUB_URL?.trim() ||
+    "https://github.com/abubakr-siddiqi",
+} as const;
 
 export const SITE_NAV = [
   { href: "#work", label: "Work" },

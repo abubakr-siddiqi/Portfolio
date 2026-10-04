@@ -28,7 +28,7 @@ export function trackEvent(eventName: string, params?: GtagEventParams) {
 export function trackResumeDownload(location: string) {
   trackEvent("resume_download", {
     event_category: "engagement",
-    file_name: "abubakar-resume-original.pdf",
+    file_name: "AbuBakr-Siddiqi-CV.pdf",
     link_url: SITE_RESUME_PDF,
     location,
   });

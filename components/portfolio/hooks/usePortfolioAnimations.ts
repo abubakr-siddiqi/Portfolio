@@ -34,7 +34,7 @@ export function usePortfolioAnimations(
         );
         gsap.set(".site-header", { y: 0, opacity: 1 });
         gsap.set(".nav-link", { opacity: 1, y: 0 });
-        gsap.set(".brand-logos-head, .brand-marquee-wrap", {
+        gsap.set(".brand-marquee-wrap", {
           opacity: 1,
           y: 0,
         });
@@ -42,7 +42,6 @@ export function usePortfolioAnimations(
           ".work-section-head, .work-section-title, .work-section-lede, .projects-section-head, .projects-section-grid, .services-section-head, .services-section-body, .testimonials-section-head, .testimonials-section-body",
           { opacity: 1, y: 0 },
         );
-        gsap.set(".footer-line", { scaleX: 1 });
         return;
       }
 
@@ -63,7 +62,6 @@ export function usePortfolioAnimations(
       );
       gsap.set(".site-header", { y: -16, opacity: 0 });
       gsap.set(".nav-link", { opacity: 0, y: -6 });
-      gsap.set(".brand-logos-head", { opacity: 0, y: 24 });
       gsap.set(".brand-marquee-wrap", { opacity: 0, y: 22 });
 
       const introTl = gsap.timeline({
@@ -115,10 +113,6 @@ export function usePortfolioAnimations(
       gsap.set(".services-section-body", { opacity: 0, y: 36 });
       gsap.set(".testimonials-section-head", { opacity: 0, y: 28 });
       gsap.set(".testimonials-section-body", { opacity: 0, y: 36 });
-      gsap.set(".footer-line", {
-        scaleX: 0,
-        transformOrigin: "center center",
-      });
 
       const scrollTl = gsap.timeline({
         scrollTrigger: {
@@ -185,11 +179,6 @@ export function usePortfolioAnimations(
         );
       }
 
-      scrollTl.to(
-        ".brand-logos-head",
-        { opacity: 1, y: 0, duration: 0.09, ease: "power2.out" },
-        0.06,
-      );
       scrollTl.to(
         ".brand-marquee-wrap",
         { opacity: 1, y: 0, duration: 0.12, ease: "power2.out" },
@@ -293,12 +282,6 @@ export function usePortfolioAnimations(
         ".testimonials-section-body",
         { opacity: 1, y: 0, duration: 0.14, ease: "power2.out" },
         0.62,
-      );
-
-      scrollTl.to(
-        ".footer-line",
-        { scaleX: 1, duration: 0.14, ease: "power2.out" },
-        0.7,
       );
     }, root);
 

@@ -7,6 +7,7 @@ import { DesignViewportContainer } from "./DesignViewportContainer";
 import {
   SITE_BRAND_PRIMARY,
   SITE_BRAND_SECONDARY,
+  SITE_SOCIAL,
 } from "./data";
 import { useContactModal } from "./ContactModalContext";
 import { useHeroCanvasBreakpoint } from "./hooks/useHeroCanvasBreakpoint";
@@ -17,33 +18,23 @@ type ParallaxFrameFn = () => void;
 const HERO_BG_MOUSE_MAX_PX = 12;
 const HERO_BG_MOUSE_LERP = 0.085;
 
-/** Fiverr has no Lucide icon; monochrome mark, uses `currentColor` for red. */
-function FiverrIcon({ className }: { className?: string }) {
+/** Upwork has no Lucide icon; monochrome mark, uses `currentColor` for red. */
+function UpworkIcon({ className }: { className?: string }) {
   return (
     <svg
       viewBox="0 0 24 24"
       className={className}
       fill="currentColor"
+      overflow="visible"
       aria-hidden
     >
-      <path d="M23.004 15.588a.995.995 0 1 0-.996-1.732v-6.01h-4v6.01zm-4-12.587v6.01h4V3.001h-4zm-12 6.01H7V9.01h4v4.01H7v2.01h8v-4.01h-4v-2.01h4V9.01H7V3.001H3v12.017h4v-6.01zm16 6.017h-4v2.01h4v-2.01zm0 4.01h-4v2.01h4v-2.01zM3 21.019h8v-4.01H3v4.01z" />
+      <path d="M18.561 13.158c-1.102 0-2.135-.467-3.074-1.227l.228-1.076.008-.042c.207-1.143.849-3.06 2.839-3.06 1.492 0 2.703 1.212 2.703 2.703-.001 1.489-1.212 2.702-2.704 2.702zm0-8.14c-2.539 0-4.51 1.649-5.31 4.36-1.22-1.834-2.148-4.046-2.695-5.788h-2.715v7.008c-.002 1.38-1.121 2.5-2.502 2.5-1.378 0-2.498-1.12-2.498-2.5V3.59H2.126v7.008c0 2.878 2.34 5.217 5.217 5.217 2.879 0 5.22-2.339 5.22-5.217v-1.17c.529 1.107 1.182 2.229 1.974 3.221l-1.673 7.873h2.789l1.205-5.682c1.043.64 2.24 1.04 3.603 1.04 2.929 0 5.305-2.375 5.305-5.304 0-2.928-2.376-5.302-5.305-5.302z" />
     </svg>
   );
 }
 
-const heroSocialLinks = {
-  linkedin:
-    process.env.NEXT_PUBLIC_HERO_LINKEDIN_URL?.trim() ||
-    "https://www.linkedin.com/",
-  fiverr:
-    process.env.NEXT_PUBLIC_HERO_FIVERR_URL?.trim() ||
-    "https://www.fiverr.com/",
-  github:
-    process.env.NEXT_PUBLIC_HERO_GITHUB_URL?.trim() || "https://github.com/",
-} as const;
-
 const iconLinkClass =
-  "text-[#e60000] transition-opacity hover:opacity-85 focus-visible:rounded-sm focus-visible:outline-none focus-visible:ring-2 focus-visible:ring-[#e60000] focus-visible:ring-offset-2 focus-visible:ring-offset-transparent";
+  "inline-flex overflow-visible text-[#e60000] transition-opacity hover:opacity-85 focus-visible:rounded-sm focus-visible:outline-none focus-visible:ring-2 focus-visible:ring-[#e60000] focus-visible:ring-offset-2 focus-visible:ring-offset-transparent";
 
 const HERO_LABEL_FULL = "FULL";
 const HERO_LABEL_STACK = "STACK";
@@ -307,7 +298,7 @@ const HeroSectionV2 = forwardRef<HTMLElement>(function HeroSectionV2(_, ref) {
                 <ul className="flex items-center gap-(--hero-social-gap)">
                   <li>
                     <a
-                      href={heroSocialLinks.linkedin}
+                      href={SITE_SOCIAL.linkedin}
                       target="_blank"
                       rel="noopener noreferrer"
                       className={iconLinkClass}
@@ -322,18 +313,18 @@ const HeroSectionV2 = forwardRef<HTMLElement>(function HeroSectionV2(_, ref) {
                   </li>
                   <li>
                     <a
-                      href={heroSocialLinks.fiverr}
+                      href={SITE_SOCIAL.upwork}
                       target="_blank"
                       rel="noopener noreferrer"
                       className={iconLinkClass}
                     >
-                      <FiverrIcon className="size-(--hero-social-size)" />
-                      <span className="sr-only">Fiverr</span>
+                      <UpworkIcon className="size-(--hero-social-size)" />
+                      <span className="sr-only">Upwork</span>
                     </a>
                   </li>
                   <li>
                     <a
-                      href={heroSocialLinks.github}
+                      href={SITE_SOCIAL.github}
                       target="_blank"
                       rel="noopener noreferrer"
                       className={iconLinkClass}
